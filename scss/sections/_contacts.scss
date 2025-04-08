@@ -1,0 +1,131 @@
+.contacts {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/contacts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 14%;
+    padding: 170px 0;
+    margin: -70px 0;
+}
+
+.contacts__title {
+    margin-bottom: 64px;
+}
+
+.contacts__content {
+    display: flex;
+    gap: 32px;
+}
+
+.contacts__map {
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.contacts__block {
+    padding: 64px;
+    background: #FFFFFF;
+    border-radius: 70px;
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 390px;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 20px;
+    background: #EAE2D8;
+    border-radius: 25px;
+    gap: 8px;
+    margin-bottom: 16px;
+    
+    img {
+        width: 24px;
+    }
+}
+
+.contacts__social {
+    display: flex;
+    gap: 12px;
+}
+
+@media (max-width: 1366px) {
+    .contacts {
+        padding: 154px 0;
+    }
+    .contacts__block {
+        padding: 46px;
+    }
+    .contacts__title {
+        margin-bottom: 46px;
+    }
+    .contacts__social {
+
+        img {
+            width: 56px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contacts {
+        padding: 124px 0;
+    }
+    .contacts__block {
+        padding: 36px;
+    }
+    .contacts__title {
+        margin-bottom: 36px;
+    }
+    .contacts__content {
+        flex-direction: column;
+    }
+    .contacts__info {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        > div {
+            flex-basis: calc(100% / 2 - 24px / 2);
+        }
+    }
+    .contacts__social {
+
+        img {
+            width: 48px;
+        }
+    }
+    .contacts__map {
+        height: 232px;
+    }
+    .contacts__info {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__info {
+        flex-direction: column;
+
+        > div {
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .contacts__map {
+        height: 194px;
+        border-radius: 30px;
+    }
+}

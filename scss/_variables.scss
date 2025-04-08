@@ -1,0 +1,17 @@
+$fontMain: 'Gogh', sans-serif;
+$colorFont: #251A00;
+$colorTitle: #251A00;
+
+@mixin font ($fontSize: 22px, $fontW: 500, $color: $colorFont, $lineHeight: 120%) {
+	font-size: $fontSize;
+	font-weight: $fontW;
+	color: $color;
+  	line-height: $lineHeight;
+}
+
+@mixin title ($fontSize: 48px, $fontW: 700, $color: $colorTitle, $lineHeight: 100%) {
+	font-size: $fontSize;
+	font-weight: $fontW;
+	color: $color;
+  	line-height: $lineHeight;
+}
